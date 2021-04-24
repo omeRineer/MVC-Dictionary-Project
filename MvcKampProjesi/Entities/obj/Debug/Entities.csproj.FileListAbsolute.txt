@@ -1,0 +1,14 @@
+C:\Users\ASUS\source\repos\MvcKampProjesi\Entities\bin\Debug\Entities.dll.config
+C:\Users\ASUS\source\repos\MvcKampProjesi\Entities\bin\Debug\Entities.dll
+C:\Users\ASUS\source\repos\MvcKampProjesi\Entities\bin\Debug\Entities.pdb
+C:\Users\ASUS\source\repos\MvcKampProjesi\Entities\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\source\repos\MvcKampProjesi\Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\source\repos\MvcKampProjesi\Entities\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\source\repos\MvcKampProjesi\Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\source\repos\MvcKampProjesi\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
+C:\Users\ASUS\source\repos\MvcKampProjesi\Entities\obj\Debug\Entities.csproj.CopyComplete
+C:\Users\ASUS\source\repos\MvcKampProjesi\Entities\obj\Debug\Entities.dll
+C:\Users\ASUS\source\repos\MvcKampProjesi\Entities\obj\Debug\Entities.pdb
+C:\Users\ASUS\source\repos\MvcKampProjesi\Entities\bin\Debug\Core.dll
+C:\Users\ASUS\source\repos\MvcKampProjesi\Entities\bin\Debug\Core.pdb
+C:\Users\ASUS\source\repos\MvcKampProjesi\Entities\bin\Debug\Core.dll.config
