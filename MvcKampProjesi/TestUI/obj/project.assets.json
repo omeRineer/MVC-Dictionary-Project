@@ -5,6 +5,7 @@
       "Business/1.0.0": {
         "type": "project",
         "dependencies": {
+          "Core": "1.0.0",
           "DataAccess": "1.0.0",
           "Entities": "1.0.0"
         },

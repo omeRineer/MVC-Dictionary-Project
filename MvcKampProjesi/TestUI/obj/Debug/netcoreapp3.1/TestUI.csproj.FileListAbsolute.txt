@@ -24,3 +24,5 @@ C:\Users\ASUS\source\repos\MvcKampProjesi\TestUI\obj\Debug\netcoreapp3.1\TestUI.
 C:\Users\ASUS\source\repos\MvcKampProjesi\TestUI\obj\Debug\netcoreapp3.1\TestUI.csproj.CopyComplete
 C:\Users\ASUS\source\repos\MvcKampProjesi\TestUI\obj\Debug\netcoreapp3.1\TestUI.dll
 C:\Users\ASUS\source\repos\MvcKampProjesi\TestUI\obj\Debug\netcoreapp3.1\TestUI.pdb
+C:\Users\ASUS\source\repos\MvcKampProjesi\TestUI\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\ASUS\source\repos\MvcKampProjesi\TestUI\bin\Debug\netcoreapp3.1\FluentValidation.xml

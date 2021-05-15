@@ -1,4 +1,7 @@
 ﻿using Business.Abstract;
+using Business.ValidationRules;
+using Core.CrossCuttingConcerns.Validation;
+using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,29 +13,48 @@ namespace Business.Concrete
 {
     public class ContactManager : IContactService
     {
+        IContactDal _contacDal;
+
+        public ContactManager(IContactDal contacDal)
+        {
+            _contacDal = contacDal;
+        }
+
         public void Add(Contact contact)
         {
-            throw new NotImplementedException();
+            ValidationTool.Load(new ContactRules(), contact);
+
+
+
+            _contacDal.Add(contact);
         }
 
         public void Delete(Contact contact)
         {
-            throw new NotImplementedException();
+            ValidationTool.Load(new ContactRules(), contact);
+
+
+
+            _contacDal.Delete(contact);
         }
 
         public List<Contact> GetAll()
         {
-            throw new NotImplementedException();
+            return _contacDal.GetAll();
         }
 
         public Contact GetById(int contactId)
         {
-            throw new NotImplementedException();
+            return _contacDal.Get(p => p.ContactId == contactId);
         }
 
         public void Update(Contact contact)
         {
-            throw new NotImplementedException();
+            ValidationTool.Load(new ContactRules(), contact);
+
+
+
+            _contacDal.Update(contact);
         }
     }
 }

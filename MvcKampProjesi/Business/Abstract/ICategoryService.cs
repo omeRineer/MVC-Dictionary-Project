@@ -10,6 +10,8 @@ namespace Business.Abstract
     public interface ICategoryService
     {
         List<Category> GetAll();
+        List<Category> GetByTrueStatus();
+        List<Category> GetByFalseStatus();
         Category GetById(int categoryId);
 
         void Add(Category category);

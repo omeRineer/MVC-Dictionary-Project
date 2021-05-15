@@ -13,6 +13,9 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
+              "C:\\Users\\ASUS\\source\\repos\\MvcKampProjesi\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\source\\repos\\MvcKampProjesi\\Core\\Core.csproj"
+              },
               "C:\\Users\\ASUS\\source\\repos\\MvcKampProjesi\\DataAccess\\DataAccess.csproj": {
                 "projectPath": "C:\\Users\\ASUS\\source\\repos\\MvcKampProjesi\\DataAccess\\DataAccess.csproj"
               },

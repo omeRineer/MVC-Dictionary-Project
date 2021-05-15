@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+</head>
+<body>
+    <h1>Kategori Ekleme Sayfası</h1>
+    <form method="post">
+        <input class="form-control" type="text" name="CategoryName" id="name" placeholder="Category Name" required />
+        <input class="form-control" type="radio" name="status" value="true" />True
+        <input class="form-control" type="radio" name="status" value="false" />false
+        <input class="form-control" type="text" name="CategoryDescription" id="name" placeholder="Category Description" />
+        <input type="submit" />
+    </form>
+</body>
+</html>

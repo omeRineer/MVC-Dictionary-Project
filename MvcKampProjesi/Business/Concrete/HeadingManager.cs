@@ -1,4 +1,7 @@
 ﻿using Business.Abstract;
+using Business.ValidationRules;
+using Core.CrossCuttingConcerns.Validation;
+using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,29 +13,53 @@ namespace Business.Concrete
 {
     public class HeadingManager : IHeadingService
     {
+        IHeadingDal _headingDal;
+
+        public HeadingManager(IHeadingDal headingDal)
+        {
+            _headingDal = headingDal;
+        }
+
         public void Add(Heading heading)
         {
-            throw new NotImplementedException();
+            ValidationTool.Load(new HeadingRules(), heading);
+
+
+
+            _headingDal.Add(heading);
         }
 
         public void Delete(Heading heading)
         {
-            throw new NotImplementedException();
+            ValidationTool.Load(new HeadingRules(), heading);
+
+
+
+            _headingDal.Delete(heading);
         }
 
         public List<Heading> GetAll()
         {
-            throw new NotImplementedException();
+            return _headingDal.GetAll();
+        }
+
+        public List<Heading> GetByCategory(int categoryId)
+        {
+            return _headingDal.GetAll(x => x.CategoryId == categoryId);
         }
 
         public Heading GetById(int headingId)
         {
-            throw new NotImplementedException();
+            return _headingDal.Get(p => p.HeadingId == headingId);
         }
 
         public void Update(Heading heading)
         {
-            throw new NotImplementedException();
+            ValidationTool.Load(new HeadingRules(), heading);
+
+
+
+            _headingDal.Update(heading);
         }
     }
 }

@@ -54,3 +54,5 @@ C:\Users\ASUS\source\repos\MvcKampProjesi\Core\bin\Debug\System.Memory.xml
 C:\Users\ASUS\source\repos\MvcKampProjesi\Core\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\ASUS\source\repos\MvcKampProjesi\Core\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\ASUS\source\repos\MvcKampProjesi\Core\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ASUS\source\repos\MvcKampProjesi\Core\bin\Debug\FluentValidation.dll
+C:\Users\ASUS\source\repos\MvcKampProjesi\Core\bin\Debug\FluentValidation.xml

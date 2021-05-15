@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentValidation, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.10.1.0\lib\netstandard2.0\FluentValidation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -54,10 +57,20 @@
     <Compile Include="Concrete\HeadingManager.cs" />
     <Compile Include="Concrete\WriterManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidationRules\AboutRules.cs" />
+    <Compile Include="ValidationRules\CategoryRules.cs" />
+    <Compile Include="ValidationRules\ContactRules.cs" />
+    <Compile Include="ValidationRules\ContentRules.cs" />
+    <Compile Include="ValidationRules\HeadingRules.cs" />
+    <Compile Include="ValidationRules\WriterRules.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{da007e9a-76b3-40aa-8aeb-cc591d79b437}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
-      <Project>{1F686946-C60A-4BE0-80B6-95CEE73DE468}</Project>
+      <Project>{1f686946-c60a-4be0-80b6-95cee73de468}</Project>
       <Name>DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\Entities\Entities.csproj">
@@ -67,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

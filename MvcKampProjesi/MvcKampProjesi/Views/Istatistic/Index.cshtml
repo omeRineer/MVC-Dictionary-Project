@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+    
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            <h5 class="card-title">Toplam Kategori Sayısı</h5>
+        </div>
+        <div class="card-body">
+            @ViewBag.CategoryCount
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            <h5 class="card-title">Yazılım Kategorisine Ait Başlık Sayısı</h5>
+        </div>
+        <div class="card-body">
+            @ViewBag.YazilimHeading
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            <h5 class="card-title">Yazar İsmi A Harfi İle Başlayanların Sayısı</h5>
+        </div>
+        <div class="card-body">
+            @ViewBag.YazarA
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            <h5 class="card-title">En çok başlığa sahip kategori</h5>
+        </div>
+        <div class="card-body">
+            HOCAM BUNU YAPMAYA ÇALIŞIYORUM 
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+            <h5 class="card-title">Kategori tablosunda durumu true olan kategoriler ile false olan kategoriler arasındaki sayısal fark</h5>
+        </div>
+        <div class="card-body">
+            @ViewBag.TrueFalse
+        </div>
+    </div>
+

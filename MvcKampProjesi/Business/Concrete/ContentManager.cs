@@ -1,4 +1,7 @@
 ﻿using Business.Abstract;
+using Business.ValidationRules;
+using Core.CrossCuttingConcerns.Validation;
+using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,29 +13,48 @@ namespace Business.Concrete
 {
     public class ContentManager : IContentService
     {
+        IContentDal _contentDal;
+
+        public ContentManager(IContentDal contentDal)
+        {
+            _contentDal = contentDal;
+        }
+
         public void Add(Content content)
         {
-            throw new NotImplementedException();
+            ValidationTool.Load(new ContentRules(), content);
+
+
+
+            _contentDal.Add(content);
         }
 
         public void Delete(Content content)
         {
-            throw new NotImplementedException();
+            ValidationTool.Load(new ContentRules(), content);
+
+
+
+            _contentDal.Delete(content);
         }
 
         public List<Content> GetAll()
         {
-            throw new NotImplementedException();
+            return _contentDal.GetAll();
         }
 
         public Content GetById(int contentId)
         {
-            throw new NotImplementedException();
+            return _contentDal.Get(p => p.ContentId == contentId);
         }
 
         public void Update(Content content)
         {
-            throw new NotImplementedException();
+            ValidationTool.Load(new ContentRules(), content);
+
+
+
+            _contentDal.Update(content);
         }
     }
 }

@@ -20,9 +20,9 @@ namespace TestUI
            
         }
 
-        void Add()
+        static void Add()
         {
-            _
+            
         }
     }
 }

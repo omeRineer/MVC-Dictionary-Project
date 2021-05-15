@@ -16,3 +16,5 @@ C:\Users\ASUS\source\repos\MvcKampProjesi\Business\bin\Debug\Core.pdb
 C:\Users\ASUS\source\repos\MvcKampProjesi\Business\bin\Debug\Core.dll.config
 C:\Users\ASUS\source\repos\MvcKampProjesi\Business\obj\Debug\Business.csproj.CopyComplete
 C:\Users\ASUS\source\repos\MvcKampProjesi\Business\bin\Debug\Business.dll.config
+C:\Users\ASUS\source\repos\MvcKampProjesi\Business\bin\Debug\FluentValidation.dll
+C:\Users\ASUS\source\repos\MvcKampProjesi\Business\bin\Debug\FluentValidation.xml

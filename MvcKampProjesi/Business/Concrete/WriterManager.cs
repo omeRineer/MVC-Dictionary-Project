@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.ValidationRules;
+using Core.CrossCuttingConcerns.Validation;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -20,27 +22,44 @@ namespace Business.Concrete
 
         public void Add(Writer writer)
         {
-            
+            ValidationTool.Load(new WriterRules(), writer);
+
+
+
+            _writerDal.Add(writer);
         }
 
         public void Delete(Writer writer)
         {
-            throw new NotImplementedException();
+            ValidationTool.Load(new WriterRules(), writer);
+
+
+
+            _writerDal.Delete(writer);
         }
 
         public List<Writer> GetAll()
         {
-            throw new NotImplementedException();
+            return _writerDal.GetAll();
         }
 
         public Writer GetById(int writerId)
         {
-            throw new NotImplementedException();
+            return _writerDal.Get(p => p.WriterId == writerId);
+        }
+
+        public List<Writer> GetWriterByStartA()
+        {
+            return _writerDal.GetAll(x => x.WriterName.Contains("a"));
         }
 
         public void Update(Writer writer)
         {
-            throw new NotImplementedException();
+            ValidationTool.Load(new WriterRules(), writer);
+
+
+
+            _writerDal.Update(writer);
         }
     }
 }

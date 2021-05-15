@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Business.ValidationRules;
+using Core.CrossCuttingConcerns.Validation;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -21,27 +23,39 @@ namespace Business.Concrete
 
         public void Add(About about)
         {
-            
+            ValidationTool.Load(new AboutRules(), about);
+
+
+
+            _aboutDal.Add(about);
         }
 
         public void Delete(About about)
         {
-            throw new NotImplementedException();
+            ValidationTool.Load(new AboutRules(), about);
+
+
+
+            _aboutDal.Delete(about);
         }
 
         public List<About> GetAll()
         {
-            throw new NotImplementedException();
+            return _aboutDal.GetAll();
         }
 
         public About GetById(int aboutId)
         {
-            throw new NotImplementedException();
+            return _aboutDal.Get(p => p.AboutId == aboutId);
         }
 
         public void Update(About about)
         {
-            throw new NotImplementedException();
+            ValidationTool.Load(new AboutRules(), about);
+
+
+
+            _aboutDal.Update(about);
         }
     }
 }
